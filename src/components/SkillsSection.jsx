@@ -6,7 +6,7 @@ const skills = [
   { name: "Java", level: 4, category: "programming" },
   { name: "SQL", level: 3.99, category: "programming" },
   { name: "C++", level: 3, category: "programming" },
-  { name: "JavaScript", level: 3, category: "programming" },
+  // { name: "JavaScript", level: 3, category: "programming" },
   { name: "Python", level: 2.5, category: "programming" },
 
   // Web Technologies
