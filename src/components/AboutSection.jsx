@@ -1,6 +1,15 @@
 import { Briefcase, Code, Cpu, Layers, Layout, User } from "lucide-react";
+import { useState } from "react";
 
 export const AboutSection = () => {
+
+  const [downloading, setDownloading] = useState(false);
+
+  const handleDownload = () => {
+    setDownloading(true);
+    setTimeout(() => setDownloading(false), 1500);
+  };
+  
   return (
     <section id="about" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
@@ -11,7 +20,7 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              Passionate Web Developer & Tech Creator
+              Passionate Developer & Tech Creator
             </h3>
             <p className="text-muted-foreground">
               I'm passionate about turning complex problems into elegant,
@@ -32,9 +41,10 @@ export const AboutSection = () => {
               <a
                 href="/Resume'.pdf"
                 download="Ranjan_Resume.pdf"
+                onClick={handleDownload}
                 className="cosmic-button bg-transparent border border-primary text-primary"
               >
-                Download Resume
+                {downloading ? "Downloading…" : "Download Resume"}
               </a>
             </div>
           </div>

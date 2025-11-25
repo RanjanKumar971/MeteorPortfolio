@@ -17,19 +17,19 @@ export const HeroSection = () => {
               Kumar
             </span>
           </h1>
-          <h2 className="text-primary">
-            Java Developer <span className="text-white">•</span> Full-Stack Web
-            Developer <span className="text-white">•</span> DSA/LeetCode
+          <h2 className="text-base md:text-2xl  text-primary ml-2 opacity-0 animate-fade-in-delay-3">
+            Java Developer <span className="text-foreground">•</span> Full-Stack Web
+            Developer <span className="text-foreground">•</span> DSA/LeetCode
             Enthusiast
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground max-2-2xl opacity-0 animate-fade-in-delay-3">
+          <p className="text-lg md:text-xl text-muted-foreground max-2-2xl opacity-0 animate-fade-in-delay-4">
             I build scalable backend systems, clean user interfaces, and solve
             complex problems through data structures and algorithms. Passionate
             about creating real-world projects and constantly improving my
             skills.
           </p>
 
-          <div className="opacity-0 animate-fade-in-delay-4">
+          <div className="opacity-0 animate-fade-in-delay-5">
             <a href="#projects" className="cosmic-button">
               View My Work
             </a>
