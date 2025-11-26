@@ -3,13 +3,23 @@ import { useEffect, useState } from "react";
 
 //in 344 original : className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
 
-
 const projects = [
   {
     id: 1,
     title: "Blog Website",
-    description:
-      "A sleek and responsive blog website that lets users create and explore content effortlessly.",
+    // description:
+    //   "A sleek and responsive blog website that lets users create and explore content effortlessly.",
+    description: (
+      <>
+        A sleek and responsive blog website that lets users create and explore
+        content effortlessly.
+        <br />
+        <br />
+        <strong>
+          Currently in development with plans to deply soon.
+        </strong>
+      </>
+    ),
     image: "/projects/blog/img1.png",
     tags: ["React", "MongoDB", "Node.js", "Express.js"],
     demourl: "#",

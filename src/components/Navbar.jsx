@@ -58,7 +58,7 @@ export const Navbar = () => {
 
         {/* destop nav */}
 
-        <div className="hidden md:flex space-x-8">
+        <div className="hidden md:flex space-x-8 pt-3">
           {navItems.map((item, key) => (
             <a
               key={key}
