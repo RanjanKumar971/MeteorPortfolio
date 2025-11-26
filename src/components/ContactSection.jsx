@@ -1,6 +1,28 @@
-import { Copy, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import { Copy, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
+import { cn } from "../lib/utils";
+import { useToast } from "../hooks/use-toast";
+import { useState } from "react";
 
 export const ContactSection = () => {
+  const { toast } = useToast();
+  const [isSubmitting,setIsSubmitting] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    setIsSubmitting(true);
+
+    setTimeout(() => {
+      toast({
+        title: "Message sent!",
+        description: "Thank you for your message. I'll get back to you soon",
+      });
+      setIsSubmitting(false);
+    }, 1500);
+
+    
+  };
+
   const copyEmail = () => {
     const email = "ranjankumar1210rk@gmail.com";
     if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -135,8 +157,80 @@ export const ContactSection = () => {
                 >
                   <Linkedin className="hover:text-primary transition-colors" />
                 </a>
+                {/* add other links */}
               </div>
             </div>
+          </div>
+
+          <div
+            className="bg-card p-8 rounded-lg shadow-xs border border-primary/40"
+            onSubmit={handleSubmit}
+          >
+            <h3 className="text-2xl font-semibold text-primary mb-6">Send a Message</h3>
+
+            {/* form */}
+            <form className="space-y-6">
+              <div>
+                {/* Name */}
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium mb-2"
+                >
+                  Your Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  className="w-full px-4 py-3 rounded-lg border border-input bg-background text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary transition-colors"
+                  placeholder="Enter your name"
+                />
+              </div>
+              {/* Email */}
+              <div>
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium mb-2"
+                >
+                  Your Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  className="w-full px-4 py-3 rounded-lg border border-input bg-background text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary transition-colors"
+                  placeholder="Enter your email"
+                />
+              </div>
+              {/* Message */}
+              <div>
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium mb-2"
+                >
+                  Your Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  className="w-full h-40 px-4 py-3 rounded-lg border border-input bg-background text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary transition-colors resize-none"
+                  placeholder="Enter your message"
+                />
+              </div>
+              {/* submit button */}
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className={cn(
+                  "cosmic-button w-full flex items-center justify-center gap-2"
+                )}
+              >
+                {isSubmitting ? "Sending..." : "Send Message"} <Send size={16} />
+              </button>
+            </form>
           </div>
         </div>
       </div>
