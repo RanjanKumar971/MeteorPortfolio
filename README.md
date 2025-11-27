@@ -1,16 +1,98 @@
-# React + Vite
+# 🌐 Personal Portfolio – Ranjan Kumar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website!
+This project showcases my skills, projects, and achievements as a **Full-Stack Developer (Java + MERN)**.
+I built this portfolio to reflect my work and make it easier for others to connect with me.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack Used
 
-## React Compiler
+- **Frontend:** React.js, Tailwind CSS
+- **Deployment:** Vercel
+- **Other Tools:** Lucide Icons, Formspree (Contact Form), Animations, Custom Hooks
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Fully responsive and modern UI
+- Smooth navigation with interactive animations
+- Projects section with live demos & GitHub links
+- Contact form with email integration
+- Light / Dark theme toggle
+- Performance and analytics tracking (Vercel Analytics)
+
+---
+
+## 📸 Preview
+
+_(Add screenshots or GIF preview here later)_
+
+---
+
+## 🌍 Live Demo
+
+🔗 **Portfolio Link:** [https://meteor-portfolio.vercel.app/](https://meteor-portfolio.vercel.app/)
+
+---
+
+## 📁 Folder Structure
+
+```
+portfolio/
+ ├── public/
+ |      ├── projects/
+ |      └── Resume.pdf
+ ├── src/
+ │   ├── components/
+ │   ├── pages/
+ │   ├── assets/
+ │   └── lib/
+ ├── package.json
+ ├── README.md
+ └── ...
+```
+
+---
+
+## 📬 Contact Me
+
+If you have any feedback or want to connect — feel free to reach out! 👇
+
+📧 Email: [ranjankumar1210rk@gmail.com](mailto:ranjankumar1210rk@gmail.com)
+🔗 LinkedIn: _[https://www.linkedin.com/in/ranjan-kumar-1b14b6250/](https://www.linkedin.com/in/ranjan-kumar-1b14b6250/)_
+
+---
+
+## 🛠️ Setup and Usage
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/your-portfolio-repo.git
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run local development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+---
+
+## ⭐ Show Your Support
+
+If you like this project, please **⭐ the repository** — it helps me grow! 😊

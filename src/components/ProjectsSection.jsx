@@ -15,9 +15,7 @@ const projects = [
         content effortlessly.
         <br />
         <br />
-        <strong>
-          Currently in development with plans to deply soon.
-        </strong>
+        <strong>Currently in development with plans to deply soon.</strong>
       </>
     ),
     image: "/projects/blog/img1.png",

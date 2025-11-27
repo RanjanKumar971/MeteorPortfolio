@@ -1,4 +1,12 @@
-import { Copy, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
+import {
+  Copy,
+  Github,
+  Linkedin,
+  Mail,
+  MapPin,
+  Phone,
+  Send,
+} from "lucide-react";
 import { cn } from "../lib/utils";
 import { useToast } from "../hooks/use-toast";
 import { useState } from "react";
@@ -154,6 +162,14 @@ export const ContactSection = () => {
                   rel="noreferrer"
                 >
                   <Linkedin className="hover:text-primary transition-colors" />
+                </a>
+
+                <a
+                  href="https://github.com/RanjanKumar971"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Github className="hover:text-primary transition-colors" />
                 </a>
               </div>
               {/* add other links */}
